@@ -1,0 +1,24 @@
+STEPS FOR MERGING TO MAIN
+
+Create a New Branch
+When creating changes and adding new code, create a new branch
+Command: git checkout -b <branch>
+<branch> is the name of the new branch that you are creating
+To switch branches: git checkout <branch>
+To show current branch: git branch - -show-current
+Alternatively: git status
+To push branch if it does NOT exist on remote repo: git push -u origin <branch>
+As you do work in your own branch, continue to commit and push to that branch as often as you want.
+You can create and manipulate branches through your IDE or through your command line.
+
+Create a Pull Request
+When ready to merge to main, create a pull request
+You can create a pull request through your IDE or through GitHub
+Wes/ Admin will review code change and either approve for merge or ask for updates to be made prior to merge being made (this can be viewed and approved easily through GitHub)
+Pull requests can be opened and closed in GitHub
+
+Delete Branch
+Once merge is successfully made, new branch can be deleted
+To delete remote branch: git push origin - - delete <branch>
+To delete local branch: git branch -d <branch>
+Branch can also be deleted through GitHub
