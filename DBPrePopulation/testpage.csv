@@ -1,6 +1,0 @@
-OrganizationID,ProgramID,LocalityID,AvgRating,AcceptsWho,ProvidesTransportation,Keywords,LastUpdate
-1,1,1,99,people with a pulse,true,food shelter water,2022-08-31 01:21:31
-2,2,2,45,people without a pulse,false,food shelter medical mental illness addiction, 2022-09-30 01:21:31
-3,3,3,86,everyone in need,true,food, 2022-10-31 11:12:45
-4,4,4,25,anyone desperate for help,false,shelter,2021-11-30 12:10:31
-5,5,5,88,those with or without insurance,true,medical,2022-10-30 8:47:20
