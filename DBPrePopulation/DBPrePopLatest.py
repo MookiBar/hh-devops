@@ -99,14 +99,14 @@ progTwoID = hh_db.add_db_object(progTwo)
 
 #LOCALITY
 locOne = hh_db.LOCALITY(Name ='Union Mission Ministries', OrganizationID = orgOneID, ProgramID = None ,
-                    Address='5100 E. Virginia Beach Blvd., Norfolk, VA 23502', Latitude='', Longitude='',
+                    Address='5100 E. Virginia Beach Blvd., Norfolk, VA 23502', Latitude='36.84458', Longitude='-76.15324',
                     PhoneNumber='757-627-8686', Hours='24/7', AcceptingVolunteers=1, VolunteerNotice='Apply online',
                     HelpSeekerNotice='Fill out the form online or call us directly at 757-627-8686',
                         ProvidesTransportation=0, Food=1, Shelter=1, Medicine=1, Clothing=1,
                     Supplies=1, Addiction=0,Counseling=1, Legal=0, Veteran=0, Family=1, PageIDPageID=resPageFiveID)
 locOneID = hh_db.add_db_object(locOne)
 locTwo = hh_db.LOCALITY(Name ='The Hope Center: Mens Shelter', OrganizationID = orgTwoID, ProgramID = None ,
-                    Address='203 West 19th Street, Norfolk, VA', Latitude='', Longitude='',
+                    Address='203 West 19th Street, Norfolk, VA', Latitude='36.86696', Longitude='-76.28707',
                     PhoneNumber='757-627-8686', Hours='24/7', AcceptingVolunteers=1,
                         VolunteerNotice='Apply online or provide a monetary donation',
                     HelpSeekerNotice='Individuals in need of services, either shelter or day services, '
