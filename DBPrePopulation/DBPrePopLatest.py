@@ -103,6 +103,20 @@ orgThree = hh_db.Organization(Name='H.O.P.E. Foundation', HQAddress='2085 Lynnha
                             Food=1, Shelter=1, Medicine=1, Clothing=1, Supplies=1, Addiction=1,
                             Counseling=1, Legal=1, Veteran=1, Family=1, PageID=resPageEightID)
 orgThreeID = hh_db.add_db_object(orgThree)
+orgFour = hh_db.Organization(Name='Norfolk Urban Outreach Ministry', HQAddress='972 Norfolk Square, Norfolk, VA',
+                            PhoneNumber=' 757-461-4213', Hours='', AcceptingVolunteers=False,
+                            VolunteerNotice='Please fill out the form online for more information or make a donation.',
+                            HelpSeekerNotice='Please fill out the form online for more information or call us.',
+                            Food=1, Shelter=1, Medicine=0, Clothing=0, Supplies=1, Addiction=0,
+                            Counseling=0, Legal=0, Veteran=0, Family=1, PageID=resPageElevenID)
+orgFourID = hh_db.add_db_object(orgFour)
+orgFive = hh_db.Organization(Name='PiN Ministry', HQAddress='1164 Miller’s Lane Suite A, Virginia Beach, VA 23451',
+                            PhoneNumber='757-962-3567', Hours='', AcceptingVolunteers=True,
+                            VolunteerNotice='Sign up to volunteer or donate online.',
+                            HelpSeekerNotice='To learn more about our emergency and recovery services, please call us at (757) 962-3567 or send us a message.',
+                            Food=1, Shelter=1, Medicine=1, Clothing=1, Supplies=1, Addiction=0,
+                            Counseling=0, Legal=0, Veteran=0, Family=1, PageID=resPageThirteenID)
+orgFiveID = hh_db.add_db_object(orgFive)
 
 #Program
 progOne = hh_db.Program(Name='Supplemental Nutrition Assistance Program (SNAP)',
@@ -125,6 +139,20 @@ progThree = hh_db.Program(Name='H.O.P.E on Wheels',
                         Food=1, Shelter=0, Medicine=0, Clothing=0, Supplies=1, Addiction=0,
                        Counseling=0, Legal=0, Veteran=0, Family=1, PageID=resPageNineID)
 progThreeID = hh_db.add_db_object(progThree)
+progFour = hh_db.Program(Name='H20 Water Assistance',
+                       Description='Eligible clients can receive up to $500 in program assistance toward eligible account costs once in any twelve-month period.',
+                       AcceptingVolunteers=0, VolunteerNotice='Donate online to assist a local family in your neighborhood.',
+                            HelpSeekerNotice='Contact the Regional Housing Crisis Hotline (757-227-5932) for H2O referral',
+                        Food=0, Shelter=0, Medicine=0, Clothing=0, Supplies=1, Addiction=0,
+                       Counseling=0, Legal=0, Veteran=0, Family=1, PageID=resPageTwelveID)
+progFourID = hh_db.add_db_object(progFour)
+progFive = hh_db.Program(Name='Heating & Cooling Assistance',
+                       Description='Program funds are used to stop disconnection or to reconnect primary heating or cooling source.',
+                       AcceptingVolunteers=0, VolunteerNotice='Check the EnergyShare box on your utility bill and make a donation.',
+                            HelpSeekerNotice='Clients must call the EnergyShare hotline, 757-965-9012 ext. 1 to obtain all current information',
+                        Food=0, Shelter=0, Medicine=0, Clothing=0, Supplies=1, Addiction=0,
+                       Counseling=0, Legal=0, Veteran=0, Family=1, PageID=resPageFifteenID)
+progFiveID = hh_db.add_db_object(progFive)
 
 #Locality
 locOne = hh_db.Locality(Name ='Union Mission Ministries', OrganizationID = orgOneID, ProgramID = None ,
@@ -160,6 +188,14 @@ locFour = hh_db.Locality(Name ='H.O.P.E. Shelter', OrganizationID = orgThreeID, 
                         ProvidesTransportation=0, Food=1, Shelter=1, Medicine=1, Clothing=1, Supplies=1, Addiction=1,
                             Counseling=1, Legal=1, Veteran=1, Family=1, PageID=resPageTenID)
 locFourID = hh_db.add_db_object(locFour)
+locFive = hh_db.Locality(Name ='PiN Essential Services', OrganizationID = orgFiveID, ProgramID = None,
+                    Address='1164 Miller’s Lane Suite A, Virginia Beach, VA 23451', Latitude='36.83894', Longitude='-76.00019',
+                    PhoneNumber='757-962-3567', Hours='M-Th 1-4pm, Sat 11am-2pm', AcceptingVolunteers=1,
+                        VolunteerNotice='Please sign up online to volunteer.',
+                    HelpSeekerNotice='If you are currently living outside, you may come in for 3 hours during service hours.',
+                        ProvidesTransportation=0, Food=0, Shelter=0, Medicine=1, Clothing=1, Supplies=1, Addiction=0,
+                            Counseling=0, Legal=0, Veteran=0, Family=0, PageID=resPageFourteenID)
+locFiveID = hh_db.add_db_object(locFive)
 
 #ORG REP
 orgRepOne = hh_db.Org_Representative(UserID=userTwoID, OrganizationID=orgOneID)
@@ -200,6 +236,21 @@ forumNine = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experi
 forumNineID = hh_db.add_db_object(forumNine)
 forumTen = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageTenID)
 forumTenID = hh_db.add_db_object(forumTen)
+forumEleven = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageElevenID)
+forumElevenID = hh_db.add_db_object(forumEleven)
+forumTwelve = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageTwelveID)
+forumTwelveID = hh_db.add_db_object(forumTwelve)
+forumThirteen = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageThirteenID)
+forumThirteenID = hh_db.add_db_object(forumThirteen)
+forumFourteen = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageFourteenID)
+forumFourteenID = hh_db.add_db_object(forumFourteen)
+forumFifteen = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageFifteenID)
+forumFifteenID = hh_db.add_db_object(forumFifteen)
+
+forumSixteen = hh_db.Forum(TimeStamp='2022-11-30 16:30:49.206215', Comment='They are very helpful!', UserID=userTwoID, PageID=resPageOneID)
+forumSixteenID = hh_db.add_db_object(forumSixteen)
+forumSeventeen = hh_db.Forum(TimeStamp='2022-11-30 16:30:49.206215', Comment='They are very helpful!', UserID=userTwoID, PageID=resPageTwoID)
+forumSeventeenID = hh_db.add_db_object(forumSeventeen)
 
 #CLEAN VOTE
 cleanOne = hh_db.Clean_Vote(UserID=userOneID, Vote=1, PageID=resPageOneID)
