@@ -164,18 +164,42 @@ locFourID = hh_db.add_db_object(locFour)
 #ORG REP
 orgRepOne = hh_db.Org_Representative(UserID=userTwoID, OrganizationID=orgOneID)
 orgRepOneID = hh_db.add_db_object(orgRepOne)
+orgRepTwo = hh_db.Org_Representative(UserID=userEightID, OrganizationID=orgTwoID)
+orgRepTwoID = hh_db.add_db_object(orgRepTwo)
 
 #LOC REP
 locRepOne = hh_db.Loc_Representative(UserID=userFourID, LocalityID=locOneID)
 locRepOneID = hh_db.add_db_object(locRepOne)
+locRepTwo = hh_db.Loc_Representative(UserID=userNineID, LocalityID=locTwoID)
+locRepTwoID = hh_db.add_db_object(locRepTwo)
 
 #PROG REP
 progRepOne = hh_db.Prog_Representative(UserID=userFiveID, ProgramID=progOneID)
 progRepOneID = hh_db.add_db_object(progRepOne)
+progRepTwo = hh_db.Prog_Representative(UserID=userTenID, ProgramID=progTwoID)
+progRepTwoID = hh_db.add_db_object(progRepTwo)
 
 #Forum
 forumOne = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageOneID)
 forumOneID = hh_db.add_db_object(forumOne)
+forumTwo = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageTwoID)
+forumTwoID = hh_db.add_db_object(forumTwo)
+forumThree = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageThreeID)
+forumThreeID = hh_db.add_db_object(forumThree)
+forumFour = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageFourID)
+forumFourID = hh_db.add_db_object(forumFour)
+forumFive = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageFiveID)
+forumFiveID = hh_db.add_db_object(forumFive)
+forumSix = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageSixID)
+forumSixID = hh_db.add_db_object(forumSix)
+forumSeven = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageSevenID)
+forumSevenID = hh_db.add_db_object(forumSeven)
+forumEight = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageEightID)
+forumEightID = hh_db.add_db_object(forumEight)
+forumNine = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageNineID)
+forumNineID = hh_db.add_db_object(forumNine)
+forumTen = hh_db.Forum(TimeStamp=datetime.datetime.now(), Comment='Great experience!', UserID=userOneID, PageID=resPageTenID)
+forumTenID = hh_db.add_db_object(forumTen)
 
 #CLEAN VOTE
 cleanOne = hh_db.Clean_Vote(UserID=userOneID, Vote=1, PageID=resPageOneID)
