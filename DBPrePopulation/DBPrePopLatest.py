@@ -146,7 +146,9 @@ safeOneID = hh_db.add_db_object(safeOne)
 
 #USAGE METRICS
 metricsOne = hh_db.Usage_Metrics(PageID=resPageOneID, AvgTimeSpent=5.65,
-                                 NumVisits=1, NumForumPosts=1, NumUpVotes=1, NumDownVotes=0)
+                                 NumVisitsAtRisk=1, NumVisitsVolunteer=1, NumVisitsRepresentative=1,
+                                 NumVisitsOther=1, NumForumPosts=1, NumUpVotesClean=1, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=1, NumDownVotesResponsive=0, NumUpVotesSafe=1, NumDownVotesSafe=0)
 metricsOneID = hh_db.add_db_object(metricsOne)
 
 #SERVICE
