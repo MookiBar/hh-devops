@@ -312,24 +312,81 @@ safeSeven = hh_db.Safe_Vote(UserID=userTwoID, Vote=1, PageID=resPageTwoID)
 safeSevenID = hh_db.add_db_object(safeSeven)
 
 #USAGE METRICS
-#metricsOne = hh_db.Usage_Metrics(PageID=resPageOneID, AvgTimeSpent=5.65,
-#                                 NumVisitsAtRisk=1, NumVisitsVolunteer=1, NumVisitsRepresentative=1,
-#                                 NumVisitsOther=1, NumForumPosts=1, NumUpVotesClean=1, NumDownVotesClean=0,
-#                                 NumUpVotesResponsive=1, NumDownVotesResponsive=0, NumUpVotesSafe=1, NumDownVotesSafe=0)
-#metricsOneID = hh_db.add_db_object(metricsOne)
+metricsOne = hh_db.Usage_Metrics(PageID=resPageOneID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsOneID = hh_db.add_db_object(metricsOne)
+metricsTwo = hh_db.Usage_Metrics(PageID=resPageTwoID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsTwoID = hh_db.add_db_object(metricsTwo)
+metricsThree = hh_db.Usage_Metrics(PageID=resPageThreeID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsThreeID = hh_db.add_db_object(metricsThree)
+metricsFour = hh_db.Usage_Metrics(PageID=resPageFourID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsFourID = hh_db.add_db_object(metricsFour)
+metricsFive = hh_db.Usage_Metrics(PageID=resPageFiveID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsFiveID = hh_db.add_db_object(metricsFive)
+metricsSix = hh_db.Usage_Metrics(PageID=resPageSixID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsSixID = hh_db.add_db_object(metricsSix)
+metricsSeven = hh_db.Usage_Metrics(PageID=resPageSevenID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsSevenID = hh_db.add_db_object(metricsSeven)
+metricsEight = hh_db.Usage_Metrics(PageID=resPageEightID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsEightID = hh_db.add_db_object(metricsEight)
+metricsNine = hh_db.Usage_Metrics(PageID=resPageNineID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsNineID = hh_db.add_db_object(metricsNine)
+metricsTen = hh_db.Usage_Metrics(PageID=resPageTenID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsTenID = hh_db.add_db_object(metricsTen)
+metricsEleven = hh_db.Usage_Metrics(PageID=resPageElevenID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsElevenID = hh_db.add_db_object(metricsEleven)
+metricsTwelve = hh_db.Usage_Metrics(PageID=resPageTwelveID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsTwelveID = hh_db.add_db_object(metricsTwelve)
+metricsThirteen = hh_db.Usage_Metrics(PageID=resPageThirteenID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsThirteenID = hh_db.add_db_object(metricsThirteen)
+metricsFourteen = hh_db.Usage_Metrics(PageID=resPageFourteenID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsFourteenID = hh_db.add_db_object(metricsFourteen)
+metricsFifteen = hh_db.Usage_Metrics(PageID=resPageFifteenID, ServicesSearched='None',
+                                 NumVisitsAtRisk=0, NumVisitsVolunteer=0, NumVisitsRepresentative=0,
+                                 NumVisitsOther=0, NumForumPosts=0, NumUpVotesClean=0, NumDownVotesClean=0,
+                                 NumUpVotesResponsive=0, NumDownVotesResponsive=0, NumUpVotesSafe=0, NumDownVotesSafe=0)
+metricsFifteenID = hh_db.add_db_object(metricsFifteen)
 
-#SERVICE
-#serviceOne = hh_db.SERVICE(Type='')
-#serviceOneID = hh_db.add_db_object(serviceOne)
 
-#ORG SERVICE LINK
-#orgServLinkOne = hh_db.ORG_SERVICE_LINK(OrganizationID='', ServiceID='')
-#orgServLinkOneID = hh_db.add_db_object(orgServLinkOne)
 
-#LOC SERVICE LINK
-#locServLinkOne = hh_db.LOC_SERVICE_LINK(LocalityID='', ServiceID='')
-#locServLinkOne = hh_db.add_db_object(locServLinkOne)
-
-#PROG SERVICE LINK
-#progServLinkOne = hh_db.PROG_SERVICE_LINK(ProgramID='', ServiceID='')
-#progServLinkOneID = hh_db.add_db_object(progServLinkOne)
